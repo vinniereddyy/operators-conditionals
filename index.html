@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+console.log(1+1);
+console.log(1-3);
+console.log(3-2);
+console.log(5-11);
+console.log(3/3);
+console.log(2/4);
+console.log(2%4);
+console.log(3%6);
+
+var a=20;
+console.log(a);
+console.log(a++);
+console.log(a);
+var v=50;
+// console.log(++v); //pre increment
+console.log(v++); //post increment
+console.log(v);
+
+
+var k=10;
+console.log(k);
+k=k+100;
+console.log(k);
+l=k+10;
+console.log(l);//copy changes applied value 
+console.log(k);//parent changes doent applied value  primitive datatype 
+//now lets try non primitive
+var s=[1,2,3,4];
+console.log(s);
+console.log(s[0]);
+s[1]="vinnie";
+console.log(s);
+console.log(s);
+
+
+var t=10;
+console.log(t);
+// t=t+20;
+// console.log(t);
+t+=20;//assignig operator
+console.log(t);
+var n=50;
+n-=10;
+console.log(a);
+n=n-10;
+console.log(n);
+
+
+var z=10;
+console.log(10==10);//equality loose equality (check only the values should be same not dtatype)
+console.log("10"==10);//(datatypes are diff here but print=true)
+console.log(10==11);//(here values are diff so now print=false)
+
+console.log(10===10);//checks that both the value and datatype shpuld same then only true
+console.log("10"===10) //false
+
+
+console.log(10!=10);//false(!= loose inequality only values should be same then only true as like ==)
+console.log("10"!=11) //true(datatypes are diff but values compared
+
+
+// var a=prompt("enter")
+// console.log(a);
+// var name=prompt("likh be");
+// console.log(name);
+
+var a=55;
+var b="hello"
+
+console.log(typeof(a)==typeof(b));//comparing type of in both variables that is datatype and one is string and one is number and we used == and 
+//data types are diff so false
+
+
+var a=50;
+var b="vinnie"
+
+console.log((a)==(b));//comparing the values in both variables that is values should be same when we use == so here the values are diff
+// so it is false
+
+
+var a="50"
+var b=50;
+console.log(a==b);//now true
+
+
+console.log(1 & 1);//and logic if both true then print =true and 0=fals and 1=true (true)
+console.log(1 & 0);//(false)
+
+console.log(1 | 0);// or loic is if any one value true then print=true and 0=false and 1=true (true)
+console.log(0 | 0);//(false)
+
+
+console.log(!1);// as we know default is default 1=true 0=false but when we use not "!" it changes true to false and false to true
+//in the exmple of not i gave !1 but 1 is true right by default but when we use ! to 1 it makes false
+console.log(!0);//here it makes true
+
+//*in javascript when we give any number except "0" that is true default behavior
+//*in javascript when we use a string if a string is empty that is "" like this no value inside quotation (" ")if space comes then its true bcs space also a character
+//then it is false and when we place a value inside the quotation that is "vinnie" then it is true
+//watch below examples
+
+console.log(2 && "3");//in "&&" the print value will always be the 2nd one that is "3"  if both the values are true as like in this example case
+console.log(0 && "");//here the values are false because 0=false and ""=false so result will be false i.e "0"
+
+
+console.log(2 || "");//here in "||" any one value true then true so i use one true value i.e (2) and one false value i.e ("")
+console.log(2 || "vinnie")//here i use both true values so print will be here reverse to the "&&" logic that is in and the 2nd value get print
+//right but in or the first value gets print so here print=2
+
+
+// ternary operators
+// condition ? expr1 : expr2 if the condition is true expr1 will print and if condition is false expr 2 print
+
+// var a=prompt("enter a");
+// a%2==0 ? alert("hello"):alert("getout");
+
+
+// var a=prompt("ENTER A");
+// a%2==0 ? console.log("even"): console.log("odd")
+
+// var a=prompt("enter a");
+// a%2==0 ? alert("maths occhu bhai niku"): alert("maths raada ra bhai");
+
+
+// var a=prompt("enter")
+// a==12 ? alert("13"): alert("error");
+
+// var a=prompt("enter");
+// a==12 ? alert("hello"):alert("dabang");
+
+// var a=prompt("enter a");
+// a!=20 ? alert("vinnie"): alert("reddy")
+
+// var a=prompt("enter a");
+// a!=12 ? alert("40"):alert("20");
+
+// var a=prompt("enter a");
+// a!=20 ? a="vinnie": a="reddy"
+// console.log(a);
+
+// var mobile=prompt("enter number");
+// mobile==8317631635 ? mobile="verified":mobile="invalid"
+// console.log(mobile);
+
+// var mobile=prompt("enter number");
+// mobile==8317631635 ? console.log("valid"):console.log("not valid"); not valid if its false in 157
+// console.log(mobile);==  so false in 157 right so  to know the wrong value that we entered print will come in 158
+
+// var phone=prompt("enter number");
+// phone==8317631635 ? alert("valid"):alert("invalid");
+
+// var a=40
+// var b=50
+// var a=prompt("enter a");
+// var b=prompt("enter b");
+// a>b ? alert("true"):alert("false");
+
+// var a=prompt("enter a")
+// var b=prompt("enter b")
+// var c=prompt("enter c")
+// a+b+c==60 ? alert("hello"):alert("getout"); <<doubt nt complted>>>
+
+// var a=["sunday","mon","tue","wed","thu","fri","sat"]
+// a[0]="sunday";
+// a[1]="mon"
+// a[2]="tue"
+// a[3]="wed"
+// a[4]="thu"
+// a[5]="fri"
+// a[6]="sat"
+// console.log(a[0]);
+// console.log(a[1]);
+// console.log(a[2]);
+// console.log(a[3]);
+// console.log(a[4]);
+// console.log(a[5]);
+// console.log(a[6]);
+
+// var a=["sunday","mon","tue","wed","thu","fri","sat"]
+// a[0]="sunday";
+// a[1]="mon";
+// a[2]="tue";
+// var a=prompt("enter a");alert("sunday");
+
+
+// var a=prompt("enter a");
+// a==12 ? a++:a--;
+// console.log(a);
+
+
+// var a=prompt("enter a");
+// a=="vineeth reddy" ? alert("validname"):alert("vinnie");
+
+
+// var a=prompt("enter a");
+// a==="30" ? a=+30:a=-30 <not completed>
+
+
+//   var a=prompt("enter a")  ;
+//   if(a==23){
+//     alert("hello")
+//   }else{
+//     alert("getlost");
+//   }
+
+  
+//in some cases the condition is directly declared with true and false exmple below
+// var a=prompt("enter a");
+// if(true){
+//     alert("namastey");
+// }else{
+//     alert("getlost"); print will be namastey
+
+
+//  var a=prompt("enter a");
+// if(a!=2){
+//     alert("namskar");
+// }else{
+//     alert("gogo");
+// }
+ 
+// var a=+prompt("enter a");
+// if(a===19){
+//     alert("welcome"); .........strict operator (===) thats why in 233 line i used + after =
+// }else{
+//     alert("exit")
+// }
+
+// var a=prompt("enter a");
+// if(a==23){
+//     alert("hi");
+// }
+// else if(a!=12){
+//     alert("my");  // ........... else if is used to give multiple conditions
+
+
+// }else{
+//     alert("letsgobye");
+// }
+
+
+// var a=prompt("enter a")
+// var b=prompt("enter b")
+
+// if(a>b){
+//     alert("very goog");//.........here if use 100 for a value and for b value 99 it shows very bad yyyy
+// }else{
+//     alert("very bad");
+// }
+
+
+// var a=10;
+// var b=20;
+// var c=30;
+// console.log(a,b,c);
+// if(a>b){
+//     console.log("c");
+// }else if(b>c){
+//     console.log("c");
+// }else if(c>a){
+//     console.log("c");
+// }
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
